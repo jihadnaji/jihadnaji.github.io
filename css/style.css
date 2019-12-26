@@ -14,7 +14,6 @@ Project:	Eric
 	**Skills Sec CSS**
 	**Education Sec CSS**
 	**Experience Sec CSS**
-	**Client Sec CSS**
 	**Achivement Sec CSS**
 	**Contact Sec CSS**
 	**Footer Sec CSS**
@@ -938,56 +937,6 @@ a.goto-social:hover {
   overflow: visible;
 }
 
-.skills-wrap .progress-bar-graph .bar-wrap {
-  position: relative;
-  float: left;
-  width: 100%;
-}
-
-.skills-wrap .progress-bar-graph .bar-wrap strong {
-  font-size: 12px;
-  font-weight: 500;
-  color: #303133;
-  opacity: 0;
-  display: block;
-  float: left;
-  position: absolute;
-  right: 0px;
-  top: -27px;
-}
-
-.skills-wrap .progress-bar-graph span {
-  background-color: #c9a48d;
-  height: 3px;
-  width: 0px;
-  display: block;
-  float: left;
-  position: relative;
-  overflow: visible !important;
-}
-
-.skills-wrap .progress-bar-graph span:after {
-  border: 3px solid #c9a48d;
-  border-radius: 50%;
-  content: "";
-  height: 15px;
-  position: absolute;
-  right: 0px;
-  background: #fff;
-  top: -6px;
-  width: 15px;
-}
-
-.skills-wrap .progress-cat {
-  font-size: 12px;
-  font-weight: 600;
-  color: #303133;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  display: block;
-  padding-bottom: 10px;
-}
-
 /********Project Sec CSS********/
 .project-gallery a {
   display: block;
@@ -1212,11 +1161,6 @@ a.goto-social:hover {
 
 .experience-wrap .exp-timeline.timeline-active .timeline-st:after {
   border: 3px solid #c9a48d;
-}
-
-/********Client Sec CSS********/
-.client-wrap .owl-carousel .owl-item img {
-  width: auto;
 }
 
 /********Achivement Sec CSS********/
