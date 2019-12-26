@@ -36,9 +36,9 @@ Project:	Eric
 @import "default-skin/default-skin.css";
 @import "lightgallery.css";
 
-$primery_font_color:#fff;
-$secondery_color:#303133;
-$background_color:#303133;
+$primery_font_color:#303133;
+$secondery_color:#fff;
+$background_color:#fff;
 
 
 $font: 'Poppins',
@@ -247,7 +247,7 @@ h1 {
 h3 {
 	font-size: 24px;
 	line-height: 36px;
-	color: #fff;
+	color: #303133;
 	font-weight: 500;
 	margin-bottom: 20px;
 	letter-spacing: -0.5;
@@ -271,13 +271,13 @@ h6 {
 
 p {
 	font-size: 16px;
-	color: #ccc;
+	color: #777;
 	line-height: 36px;
 }
 
 .p-small {
 	font-size: 14px;
-	color: #ccc;
+	color: #777;
 	line-height: 27px;
 }
 
@@ -434,7 +434,7 @@ p {
 	z-index: -1;
 	width: 100%;
 	height: 5px;
-	background: #303133;
+	background: #c8a482;
 	-webkit-transform: translate3d(-100%, 0, 0);
 	transform: translate3d(-100%, 0, 0);
 	pointer-events: none;
@@ -446,7 +446,7 @@ p {
 	right: 0;
 	width: 100px;
 	height: 100%;
-	background: #303133;
+	background: #c8a482;
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.2s, box-shadow 2s 4s;
@@ -591,7 +591,7 @@ p {
 }
 
 .fixed-bg-overlay {
-	background: rgba(255, 255, 255, .85);
+	background: rgba(201, 164, 130, .85);
 	height: 100%;
 	width: 100%;
 	z-index: -1;
@@ -615,7 +615,7 @@ p {
 	.person-img {
 		height: 150px;
 		width: 150px;
-		background: url(../img/candidate.png);
+		background: url(../img/candidate.webp);
 		border-radius: 50%;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -626,13 +626,13 @@ p {
 .btn {
 	font-size: 11px;
 	font-weight: 500;
-	color: $primery_font_color;
+	color: $secondery_color;
 	letter-spacing: 1.5px;
 	overflow: hidden;
 	position: relative;
 	text-transform: uppercase;
 	height: 37px;
-	background: $secondery_color;
+	background: $primery_font_color;
 	outline: none;
 	border: none;
 	border-radius: 2px;
@@ -647,9 +647,13 @@ p {
 	&:hover,
 	&:focus,
 	&:active {
-		background: $secondery_color !important;
+		background: $primery_font_color !important;
 		outline: none !important;
 		border: none !important;
+		color: $secondery_color !important;
+	}
+
+	&:hover {
 		color: $primery_font_color !important;
 	}
 
@@ -660,7 +664,7 @@ p {
 	}
 
 	.mask {
-		background: #c8a482;
+		background: #fff none repeat scroll 0 0;
 		border-radius: 2px;
 		display: block;
 		height: 100%;
@@ -732,7 +736,7 @@ header {
 
 		.btn {
 			color: $primery_font_color;
-			background: $secondery_color;
+			background: #fff;
 
 			.mask {
 				background: #c8a482;
@@ -745,6 +749,10 @@ header {
 				outline: none !important;
 				border: none !important;
 				color: $primery_font_color !important;
+			}
+
+			&:hover {
+				color: $secondery_color !important;
 			}
 		}
 	}
@@ -802,7 +810,7 @@ nav.navbar.navbar-default.vertical-nav {
 			}
 
 			&:before {
-				background-color: $secondery_color;
+				background-color: #fff;
 				border-radius: 50%;
 				height: 50px;
 				top: -21px !important;
@@ -821,8 +829,8 @@ nav.navbar.navbar-default.vertical-nav {
 			}
 
 			&:after {
-				background: $secondery_color none repeat scroll 0 0;
-				border: 3px solid $secondery_color;
+				background: #fff none repeat scroll 0 0;
+				border: 3px solid #fff;
 				border-radius: 50%;
 				height: 0;
 				@include transition(all 0.1s ease-out 0s);
@@ -878,7 +886,6 @@ a.goto-social:hover {
 
 .separater-hr {
 	margin: 0;
-	border-color: #454648;
 }
 
 /********Services Sec CSS********/
@@ -893,11 +900,12 @@ a.goto-social:hover {
 			letter-spacing: .5px;
 			text-transform: uppercase;
 			margin-top: 36px;
+			font-weight: 600;
 		}
 	}
 
 	.icon {
-		color: #6f6f71;
+		color: #c0c1c1;
 		font-size: 60px;
 		display: inline-block;
 		perspective: 1000px;
@@ -953,7 +961,7 @@ a.goto-social:hover {
 				height: 15px;
 				position: absolute;
 				right: 0px;
-				background: $secondery_color;
+				background: #fff;
 				top: -6px;
 				width: 15px;
 			}
@@ -1035,7 +1043,7 @@ a.goto-social:hover {
 }
 
 .lg-sub-html h6 {
-	color: $primery_font_color;
+	color: $secondery_color;
 	margin-bottom: 0;
 }
 
@@ -1045,26 +1053,26 @@ a.goto-social:hover {
 		margin-top: 42px;
 
 		.qualfication:nth-child(even) {
-			background: rgba(255, 255, 255, 0.04);
+			background: rgba(48, 49, 51, 0.04);
 		}
 	}
 
 	.qualfication {
-		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		border-bottom: 1px solid rgba(48, 49, 51, 0.1);
 		float: left;
 		padding: 30px 0;
 		width: 100%;
 
 		&.first-row {
-			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-			border-top: 1px solid rgba(255, 255, 255, 0.1);
+			border-bottom: 1px solid rgba(48, 49, 51, 0.1);
+			border-top: 1px solid rgba(48, 49, 51, 0.1);
 		}
 
 		.row-count {
 			height: 35px;
 			width: 35px;
 			display: table;
-			border: 1px solid rgba(255, 255, 255, 0.1);
+			border: 1px solid rgba(48, 49, 51, 0.1);
 			border-radius: 50%;
 			text-align: center;
 			color: $primery_font_color;
@@ -1092,7 +1100,7 @@ a.goto-social:hover {
 		}
 
 		.design {
-			color: #ccc;
+			color: #777;
 			font-size: 14px;
 			font-weight: 500;
 			text-transform: capitalize;
@@ -1121,7 +1129,7 @@ a.goto-social:hover {
 	}
 
 	.job-desn {
-		color: #ccc;
+		color: #777;
 		font-size: 16px;
 		font-weight: 500;
 		padding-bottom: 5px;
@@ -1137,13 +1145,13 @@ a.goto-social:hover {
 	}
 
 	.timeline-st {
-		background: rgba(255, 255, 255, 0.15);
+		background: rgba(48, 49, 51, 0.15);
 		margin-left: 7px;
 		margin-top: 15px;
 		width: 1px;
 
 		&:after {
-			border: 3px solid rgba(255, 255, 255, 0.15);
+			border: 3px solid rgba(48, 49, 51, 0.15);
 			border-radius: 50%;
 			content: "";
 			height: 15px;
@@ -1245,7 +1253,7 @@ a.goto-social:hover {
 		}
 
 		&::-webkit-input-placeholder {
-			color: #ccc;
+			color: #777;
 			font-size: 13px;
 			text-transform: capitalize;
 		}
@@ -1302,13 +1310,10 @@ a.goto-social:hover {
 	}
 
 	.btn {
-		background: $primery_font_color;
-		color: $secondery_color;
 
 		&:hover,
 		&:focus,
 		&:active {
-			background: $primery_font_color !important;
 			color: #fff !important;
 		}
 
@@ -1322,7 +1327,7 @@ a.goto-social:hover {
 		margin-top: 60px;
 
 		p {
-			color: #ccc;
+			color: #777;
 
 			a {
 				color: $primery_font_color;
@@ -1512,7 +1517,7 @@ footer {
 
 		.copywrite {
 			font-size: 11px;
-			color: #ccc;
+			color: #777;
 			line-height: 26px;
 
 			b {
@@ -1621,7 +1626,7 @@ footer {
 			a {
 				span {
 					display: block;
-					color: $secondery_color;
+					color: #fff;
 					font-size: 11px;
 					font-weight: 500;
 					letter-spacing: 1.5px;
@@ -1632,7 +1637,7 @@ footer {
 
 				&:hover {
 					span {
-						color: #c8a482;
+						color: grey;
 					}
 				}
 			}
@@ -1640,7 +1645,7 @@ footer {
 			&.active {
 				a {
 					span {
-						color: #c8a482;
+						color: grey;
 					}
 				}
 			}
@@ -1713,7 +1718,6 @@ footer {
 
 			.btn {
 				padding: 7px 8px;
-				background: $secondery_color !important;
 
 				.btn-label {
 					padding-bottom: 0;
@@ -1824,14 +1828,8 @@ footer {
 	.contact-wrap .btn {
 		color: $secondery_color;
 
-		&:hover,
-		&:focus,
-		&:active {
-			color: $secondery_color !important;
-
-			.mask {
-				width: 0;
-			}
+		&:hover .mask {
+			width: 0;
 		}
 	}
 
@@ -1979,7 +1977,6 @@ footer {
 	.margin-top-xs-50 {
 		margin-top: 50px;
 	}
-
 }
 
 @media only screen and (max-width: 414px) {

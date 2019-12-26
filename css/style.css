@@ -131,7 +131,7 @@ strong {
 }
 
 body {
-  color: #fff;
+  color: #303133;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -166,17 +166,17 @@ ul {
 }
 
 a {
-  color: #303133;
+  color: #fff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #303133;
+  color: #fff;
   text-decoration: none;
 }
 
 a:focus {
-  color: #303133;
+  color: #fff;
   text-decoration: none;
   outline: none;
 }
@@ -187,7 +187,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: #303133;
 }
 
 h1 {
@@ -197,13 +197,13 @@ h1 {
   font-weight: 500;
   letter-spacing: -.5px;
   margin-bottom: 75px;
-  color: #fff;
+  color: #303133;
 }
 
 h3 {
   font-size: 24px;
   line-height: 36px;
-  color: #fff;
+  color: #303133;
   font-weight: 500;
   margin-bottom: 20px;
   letter-spacing: -0.5;
@@ -227,13 +227,13 @@ h6 {
 
 p {
   font-size: 16px;
-  color: #ccc;
+  color: #777;
   line-height: 36px;
 }
 
 .p-small {
   font-size: 14px;
-  color: #ccc;
+  color: #777;
   line-height: 27px;
 }
 
@@ -389,7 +389,7 @@ p {
   z-index: -1;
   width: 100%;
   height: 5px;
-  background: #303133;
+  background: #c8a482;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
   pointer-events: none;
@@ -401,7 +401,7 @@ p {
   right: 0;
   width: 100px;
   height: 100%;
-  background: #303133;
+  background: #c8a482;
   content: '';
   opacity: 0;
   -webkit-transition: opacity 0.2s, box-shadow 2s 4s;
@@ -550,7 +550,7 @@ p {
 }
 
 .fixed-bg-overlay {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(201, 164, 130, 0.85);
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -566,7 +566,7 @@ p {
 
 /********About Sec CSS********/
 .content-block {
-  background: #303133;
+  background: #fff;
   border-top-left-radius: 10px;
   -moz-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   -o-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
@@ -630,6 +630,10 @@ p {
   color: #fff !important;
 }
 
+.btn:hover {
+  color: #303133 !important;
+}
+
 .btn span {
   position: relative;
   z-index: 2;
@@ -637,7 +641,7 @@ p {
 }
 
 .btn .mask {
-  background: #c8a482;
+  background: #fff none repeat scroll 0 0;
   border-radius: 2px;
   display: block;
   height: 100%;
@@ -661,7 +665,7 @@ p {
   font-weight: 700;
   letter-spacing: 0.5px;
   display: block;
-  color: #303133;
+  color: #fff;
   padding-top: 7px;
 }
 
@@ -698,12 +702,12 @@ header .header-wrap {
 header .header-wrap .pe-7s-download {
   font-size: 25px;
   display: none;
-  color: #fff;
+  color: #303133;
 }
 
 header .header-wrap .pe-7s-menu {
   font-size: 25px;
-  color: #fff;
+  color: #303133;
 }
 
 header.fixed {
@@ -712,7 +716,7 @@ header.fixed {
   width: 66.66%;
   position: fixed;
   z-index: 99;
-  background: #fff;
+  background: #303133;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -moz-transition: margin 0.6s ease 0s, transform 0.6s ease 0s;
@@ -722,8 +726,8 @@ header.fixed {
 }
 
 header.fixed .btn {
-  color: #fff;
-  background: #303133;
+  color: #303133;
+  background: #fff;
 }
 
 header.fixed .btn .mask {
@@ -733,9 +737,13 @@ header.fixed .btn .mask {
 header.fixed .btn:hover,
 header.fixed .btn:focus,
 header.fixed .btn:active {
-  background: #303133 !important;
+  background: #fff !important;
   outline: none !important;
   border: none !important;
+  color: #303133 !important;
+}
+
+header.fixed .btn:hover {
   color: #fff !important;
 }
 
@@ -779,7 +787,7 @@ nav.navbar.navbar-default.vertical-nav li span {
   font-weight: 500;
   left: 90px;
   line-height: 1;
-  color: #303133;
+  color: #fff;
   position: absolute;
   opacity: 0;
   text-transform: uppercase;
@@ -808,7 +816,7 @@ nav.navbar.navbar-default.vertical-nav li a:focus {
 }
 
 nav.navbar.navbar-default.vertical-nav li a:before {
-  background-color: #303133;
+  background-color: #fff;
   border-radius: 50%;
   height: 50px;
   top: -21px !important;
@@ -831,8 +839,8 @@ nav.navbar.navbar-default.vertical-nav li a:before {
 }
 
 nav.navbar.navbar-default.vertical-nav li a:after {
-  background: #303133 none repeat scroll 0 0;
-  border: 3px solid #303133;
+  background: #fff none repeat scroll 0 0;
+  border: 3px solid #fff;
   border-radius: 50%;
   height: 0;
   -moz-transition: all 0.1s ease-out 0s;
@@ -865,13 +873,13 @@ nav.navbar.navbar-default.vertical-nav li.active a:after {
 nav.navbar.navbar-default.vertical-nav li.active span {
   left: 50px;
   opacity: 1;
-  color: #303133;
+  color: #fff;
 }
 
 nav.navbar.navbar-default.vertical-nav li:hover span {
   left: 50px;
   opacity: 1;
-  color: #303133;
+  color: #fff;
 }
 
 .vertical-nav-wrap.vertical-nav-animation nav.navbar.navbar-default.vertical-nav {
@@ -883,12 +891,11 @@ a.goto-social,
 a.goto-social:hover {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #303133;
 }
 
 .separater-hr {
   margin: 0;
-  border-color: #454648;
 }
 
 /********Services Sec CSS********/
@@ -899,14 +906,15 @@ a.goto-social:hover {
 .services-icon-wrap span.key-fact {
   font-size: 14px;
   font-weight: 500;
-  color: #fff;
+  color: #303133;
   letter-spacing: .5px;
   text-transform: uppercase;
   margin-top: 36px;
+  font-weight: 600;
 }
 
 .services-icon-wrap .icon {
-  color: #6f6f71;
+  color: #c0c1c1;
   font-size: 60px;
   display: inline-block;
   perspective: 1000px;
@@ -922,7 +930,7 @@ a.goto-social:hover {
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  color: #fff;
+  color: #303133;
 }
 
 /********Skills Sec CSS********/
@@ -939,7 +947,7 @@ a.goto-social:hover {
 .skills-wrap .progress-bar-graph .bar-wrap strong {
   font-size: 12px;
   font-weight: 500;
-  color: #fff;
+  color: #303133;
   opacity: 0;
   display: block;
   float: left;
@@ -965,7 +973,7 @@ a.goto-social:hover {
   height: 15px;
   position: absolute;
   right: 0px;
-  background: #303133;
+  background: #fff;
   top: -6px;
   width: 15px;
 }
@@ -973,7 +981,7 @@ a.goto-social:hover {
 .skills-wrap .progress-cat {
   font-size: 12px;
   font-weight: 600;
-  color: #fff;
+  color: #303133;
   letter-spacing: .5px;
   text-transform: uppercase;
   display: block;
@@ -1076,29 +1084,29 @@ a.goto-social:hover {
 }
 
 .education-wrap .qualfication-wrap .qualfication:nth-child(even) {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(48, 49, 51, 0.04);
 }
 
 .education-wrap .qualfication {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(48, 49, 51, 0.1);
   float: left;
   padding: 30px 0;
   width: 100%;
 }
 
 .education-wrap .qualfication.first-row {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(48, 49, 51, 0.1);
+  border-top: 1px solid rgba(48, 49, 51, 0.1);
 }
 
 .education-wrap .qualfication .row-count {
   height: 35px;
   width: 35px;
   display: table;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(48, 49, 51, 0.1);
   border-radius: 50%;
   text-align: center;
-  color: #fff;
+  color: #303133;
   font-size: 11px;
   font-weight: 600;
 }
@@ -1109,21 +1117,21 @@ a.goto-social:hover {
 }
 
 .education-wrap .qualfication .yr-pers {
-  color: #fff;
+  color: #303133;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: .5px;
 }
 
 .education-wrap .qualfication .insti {
-  color: #fff;
+  color: #303133;
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
 }
 
 .education-wrap .qualfication .design {
-  color: #ccc;
+  color: #777;
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
@@ -1136,7 +1144,7 @@ a.goto-social:hover {
 
 /********Experience Sec CSS********/
 .experience-wrap .duration span {
-  color: #fff;
+  color: #303133;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1149,7 +1157,7 @@ a.goto-social:hover {
 }
 
 .experience-wrap .job-desn {
-  color: #ccc;
+  color: #777;
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 5px;
@@ -1157,7 +1165,7 @@ a.goto-social:hover {
 }
 
 .experience-wrap .job-loc {
-  color: #fff;
+  color: #303133;
   font-size: 14px;
   font-weight: 500;
   padding-bottom: 15px;
@@ -1165,14 +1173,14 @@ a.goto-social:hover {
 }
 
 .experience-wrap .timeline-st {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(48, 49, 51, 0.15);
   margin-left: 7px;
   margin-top: 15px;
   width: 1px;
 }
 
 .experience-wrap .timeline-st:after {
-  border: 3px solid rgba(255, 255, 255, 0.15);
+  border: 3px solid rgba(48, 49, 51, 0.15);
   border-radius: 50%;
   content: "";
   height: 15px;
@@ -1219,7 +1227,7 @@ a.goto-social:hover {
 
 .achivement-list-wrap li ul li {
   font-size: 14px;
-  color: #fff;
+  color: #303133;
   font-weight: 500;
   text-transform: capitalize;
   float: left;
@@ -1247,7 +1255,7 @@ a.goto-social:hover {
   background: transparent none repeat scroll 0 0;
   border: none;
   box-shadow: none;
-  color: #fff;
+  color: #303133;
   display: block;
   overflow: hidden;
   font-size: 13px;
@@ -1257,12 +1265,12 @@ a.goto-social:hover {
 }
 
 .contact-wrap .form-control:focus {
-  border-color: #fff;
+  border-color: #303133;
   box-shadow: none;
 }
 
 .contact-wrap .form-control::-webkit-input-placeholder {
-  color: #ccc;
+  color: #777;
   font-size: 13px;
   text-transform: capitalize;
 }
@@ -1317,15 +1325,9 @@ a.goto-social:hover {
   height: 80px;
 }
 
-.contact-wrap .btn {
-  background: #fff;
-  color: #303133;
-}
-
 .contact-wrap .btn:hover,
 .contact-wrap .btn:focus,
 .contact-wrap .btn:active {
-  background: #fff !important;
   color: #fff !important;
 }
 
@@ -1339,11 +1341,11 @@ a.goto-social:hover {
 }
 
 .contact-wrap .email-direct p {
-  color: #ccc;
+  color: #777;
 }
 
 .contact-wrap .email-direct p a {
-  color: #fff;
+  color: #303133;
   font-weight: 500;
 }
 
@@ -1426,7 +1428,7 @@ footer .available-wrap .available-tag {
   line-height: 30px;
   font-weight: 500;
   letter-spacing: -0.5;
-  color: #fff;
+  color: #303133;
   display: block;
   float: left;
 }
@@ -1480,7 +1482,7 @@ footer .social-icons-wrap .social-icons li:last-child {
 }
 
 footer .social-icons-wrap .social-icons .social-icon {
-  color: #fff;
+  color: #303133;
   font-size: 14px;
   overflow: hidden;
   text-transform: uppercase;
@@ -1525,13 +1527,13 @@ footer .copywrite-wrap {
 
 footer .copywrite-wrap .copywrite {
   font-size: 11px;
-  color: #ccc;
+  color: #777;
   line-height: 26px;
 }
 
 footer .copywrite-wrap .copywrite b {
   font-weight: 500;
-  color: #fff;
+  color: #303133;
 }
 
 footer .goto-top {
@@ -1539,7 +1541,7 @@ footer .goto-top {
 }
 
 footer .goto-top a {
-  color: #fff;
+  color: #303133;
   font-size: 11px;
   font-family: "Poppins", sans-serif;
   display: inline-block;
@@ -1630,7 +1632,7 @@ footer .goto-top a:hover span {
 
   nav.navbar.navbar-default li a span {
     display: block;
-    color: #303133;
+    color: #fff;
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 1.5px;
@@ -1643,11 +1645,11 @@ footer .goto-top a:hover span {
   }
 
   nav.navbar.navbar-default li a:hover span {
-    color: #c8a482;
+    color: grey;
   }
 
   nav.navbar.navbar-default li.active a span {
-    color: #c8a482;
+    color: grey;
   }
 
   nav.navbar.navbar-default li:hover,
@@ -1687,7 +1689,7 @@ footer .goto-top a:hover span {
   .navbar-toggle:focus,
   .navbar-toggle:active {
     background: #fff !important;
-    color: #fff;
+    color: #303133;
     box-shadow: none !important;
     outline: none !important;
     border: none !important;
@@ -1699,7 +1701,7 @@ footer .goto-top a:hover span {
     width: 100%;
     position: fixed;
     z-index: 99;
-    background: #fff;
+    background: #303133;
     -moz-transform: translateY(-70px) translateZ(0);
     -o-transform: translateY(-70px) translateZ(0);
     -ms-transform: translateY(-70px) translateZ(0);
@@ -1724,7 +1726,6 @@ footer .goto-top a:hover span {
 
   header .header-wrap .btn {
     padding: 7px 8px;
-    background: #303133 !important;
   }
 
   header .header-wrap .btn .btn-label {
@@ -1735,15 +1736,15 @@ footer .goto-top a:hover span {
   header .header-wrap .btn:hover,
   header .header-wrap .btn:focus,
   header .header-wrap .btn:active {
-    background: #303133 !important;
+    background: #fff !important;
     outline: none !important;
     border: none !important;
-    color: #fff !important;
+    color: #303133 !important;
   }
 
   header .header-wrap .btn:hover .pe-7s-download,
   header .header-wrap .btn:hover .pe-7s-menu {
-    color: #303133 !important;
+    color: #fff !important;
   }
 
   header .header-wrap b {
@@ -1759,7 +1760,7 @@ footer .goto-top a:hover span {
   }
 
   header .btn {
-    color: #fff;
+    color: #303133;
     background: #fff;
   }
 
@@ -1768,7 +1769,7 @@ footer .goto-top a:hover span {
   }
 
   header .btn:hover {
-    color: #303133;
+    color: #fff;
     background: #fff;
   }
 
@@ -1778,7 +1779,7 @@ footer .goto-top a:hover span {
 
   .navbar-default .navbar-collapse,
   .navbar {
-    background: #fff;
+    background: #303133;
     border: none;
   }
 
@@ -1818,22 +1819,14 @@ footer .goto-top a:hover span {
 
   header .header-wrap .btn:hover .pe-7s-download,
   header .header-wrap .btn:hover .pe-7s-menu {
-    color: #fff !important;
-  }
-
-  .contact-wrap .btn {
-    color: #303133;
-  }
-
-  .contact-wrap .btn:hover,
-  .contact-wrap .btn:focus,
-  .contact-wrap .btn:active {
     color: #303133 !important;
   }
 
-  .contact-wrap .btn:hover .mask,
-  .contact-wrap .btn:focus .mask,
-  .contact-wrap .btn:active .mask {
+  .contact-wrap .btn {
+    color: #fff;
+  }
+
+  .contact-wrap .btn:hover .mask {
     width: 0;
   }
 
