@@ -529,7 +529,6 @@ p {
 
 /********Body Sec CSS********/
 .fixed-bg {
-  background: transparent url("../img/mainbg.webp") no-repeat;
   animation: 60s ease 0s normal none infinite back_ken;
   -webkit-animation: 60s ease 0s normal none infinite back_ken;
   image-rendering: optimizeQuality;
@@ -546,6 +545,14 @@ p {
   transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+}
+
+.no-webp .fixed-bg {
+  background: transparent url("../img/mainbg.jpg") no-repeat;
+}
+
+.webp .fixed-bg {
+  background: transparent url("../img/mainbg.webp") no-repeat;
 }
 
 .fixed-bg-overlay {
@@ -589,10 +596,17 @@ p {
 .content-block .person-img {
   height: 150px;
   width: 150px;
-  background: url(../img/candidate.webp);
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.no-webp .content-block .person-img {
+  background: url(../img/candidate.jpg);
+}
+
+.webp .content-block .person-img {
+  background: url(../img/candidate.webp);
 }
 
 /********Header Sec CSS********/
