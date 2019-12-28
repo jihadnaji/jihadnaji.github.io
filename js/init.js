@@ -26,9 +26,9 @@
 
 /*****Ready function start*****/
 $(document).ready(function () {
-	/*eric function init start*/
-	eric();
-	/*eric function init end*/
+	/*jihad function init start*/
+	jihad();
+	/*jihad function init end*/
 
 	/*Preload anim start*/
 	$('#la_anim').addClass('la-animate');
@@ -182,52 +182,7 @@ $(window).on("resize", function () {
 /***** Resize function end *****/
 
 /***** Eric function start *****/
-var eric = function () {
-
-	/*Typed js start*/
-	$("#typed").typed({
-		strings: ["^2100&nbsp;I Am Jihad.<br/>An Application Developer.<br/> Living in Duhok City."],
-		typeSpeed: 30,
-		backDelay: 750,
-		loop: false,
-		cursorChar: "|",
-		contentType: 'html', // or text
-		// defaults to false for infinite loop
-		loopCount: false
-	});
-	/*Typed js end*/
-
-	/*Client carousel start*/
-	$('#client_sec .client-carousel').owlCarousel({
-		loop: true,
-		margin: 15,
-		nav: false,
-		dots: false,
-		responsive: {
-			0: {
-				items: 1
-			},
-			200: {
-				items: 2
-			},
-			400: {
-				items: 3
-			},
-			600: {
-				items: 4
-			},
-			1200: {
-				items: 3
-			},
-			1300: {
-				items: 4
-			},
-			1600: {
-				items: 5
-			}
-		}
-	});
-	/*Client carousel end*/
+var jihad = function () {
 
 	/*Header animation start*/
 	var scroll = $(window).scrollTop();
@@ -238,33 +193,6 @@ var eric = function () {
 		$(header).removeClass("fixed");
 	/*Header animation end*/
 
-	/*Progressbar animation start*/
-	var progressBar = $('.progress-bar-graph div');
-	for (var i = 0; i < progressBar.length; i++) {
-		$(progressBar[i]).appear(function () {
-			var percent = $(this).find('span').attr('data-width');
-			var $endNum = parseInt($(this).find('.bar-wrap strong i').text(), 10);
-
-			var $that = $(this);
-			$(this).find('span').animate({
-				'width': percent + '%'
-			}, 1600, function () {});
-			$(this).find('.bar-wrap strong').animate({
-				'opacity': 1
-			}, 1400);
-			$(this).find('.bar-wrap strong i').countTo({
-				from: 0,
-				to: $endNum,
-				speed: 1200,
-				refreshInterval: 30,
-				onComplete: function () {}
-			});
-			if (percent == '100') {
-				$that.find('bar-wrap strong').addClass('full');
-			}
-		});
-	}
-	/*Progressbar animation end*/
 
 	/*Header script start*/
 	var navbarList = $('nav.navbar li');
