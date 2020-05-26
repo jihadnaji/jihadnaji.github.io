@@ -499,3 +499,11 @@ h6 {
 .js .animate-box {
   opacity: 0;
 }
+
+.no-webp .user-profile {
+  background: url("../images/user.jpg");
+}
+
+.webp .user-profile{
+  background: url("../images/user.webp");
+}
