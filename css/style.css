@@ -81,7 +81,7 @@ h6 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 144, 0, 0.9);
+  background: #2f3c4f;
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -221,7 +221,7 @@ h6 {
 }
 .fh5co-bg-dark {
   background: #2f3c4f;
-  background: #ff9000;
+  /* background: #ff9000; */
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
@@ -353,7 +353,7 @@ h6 {
   height: 54px;
   border: none !important;
   background: #fff;
-  color: #ff9000;
+  color: #2f3c4f;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -504,6 +504,6 @@ h6 {
   background: url("../images/user.jpg");
 }
 
-.webp .user-profile{
+.webp .user-profile {
   background: url("../images/user.webp");
 }
