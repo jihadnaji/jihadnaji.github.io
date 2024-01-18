@@ -27,7 +27,7 @@ body {
   transition: 0.5s;
 }
 a {
-  color: #ff9000;
+  color: #73856e;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -35,7 +35,7 @@ a {
 a:active,
 a:focus,
 a:hover {
-  color: #ff9000;
+  color: #73856e;
   outline: 0;
   text-decoration: none;
 }
@@ -55,15 +55,15 @@ h6 {
 }
 ::-webkit-selection {
   color: #fff;
-  background: #ff9000;
+  background: #73856e;
 }
 ::-moz-selection {
   color: #fff;
-  background: #ff9000;
+  background: #73856e;
 }
 ::selection {
   color: #fff;
-  background: #ff9000;
+  background: #73856e;
 }
 #fh5co-header,
 .fh5co-cover {
@@ -272,7 +272,7 @@ h6 {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  color: #ff9000;
+  color: #73856e;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -306,7 +306,7 @@ h6 {
   font-size: 20px;
 }
 #fh5co-about .fh5co-social-icons li a:hover {
-  background: #ff9000;
+  background: #73856e;
 }
 .fh5co-heading {
   margin-bottom: 5em;
